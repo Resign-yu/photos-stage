@@ -163,7 +163,7 @@ def cut_photo():
     ----------
     调用Graphics类中的裁剪算法，将src_dir目录下的文件进行裁剪（裁剪成正方形）
     """
-    src_dir = "photos/"
+    src_dir = "./source/photos/"
     if directory_exists(src_dir):
         if not directory_exists(src_dir):
             make_directory(src_dir)
@@ -190,7 +190,7 @@ def git_operation():
     '''
     os.system('git add --all')
     os.system('git commit -m "add photos"')
-    os.system('git push origin master')
+    os.system('git push https://github.com/Resign-yu/photos-stage.git master') # git push https://github.com/Resign-yu/photos-stage.git master
 
 
 if __name__ == "__main__":
