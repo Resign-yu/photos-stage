@@ -190,7 +190,7 @@ def git_operation():
     '''
     os.system('git add .')
     os.system('git commit -m "add photos"')
-    os.system('git push https://github.com/Resign-yu/photos-stage.git master') # git push https://github.com/Resign-yu/photos-stage.git master
+    os.system('git push git@github.com:Resign-yu/photos-stage.git master') # git push https://github.com/Resign-yu/photos-stage.git master
 
 
 if __name__ == "__main__":
